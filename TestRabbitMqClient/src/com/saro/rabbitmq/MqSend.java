@@ -10,6 +10,7 @@ import com.rabbitmq.client.Channel;
 public class MqSend {
 	private final static String QUEUE_NAME = "hello";
 
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
