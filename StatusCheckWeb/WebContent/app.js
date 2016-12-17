@@ -11,8 +11,12 @@ window.onload = function() {
 
 
   // Create a new WebSocket.
-  var socket = new WebSocket('ws://localhost:8080/StatusCheckWeb/status');
-
+  //var socket = new WebSocket('ws://localhost:8080/StatusCheckWeb/status');
+  
+  
+	  var wsurl = url('/status');
+	  var socket = new WebSocket(wsurl);
+  
 
   // Handle any errors that occur.
   socket.onerror = function(error) {
@@ -85,5 +89,9 @@ window.onload = function() {
 
     return false;
   };
+  function url(s) {
+	    var l = window.location;
+	    return ((l.protocol === "https:") ? "wss://" : "ws://") + l.host + l.pathname + s;
+	}
 
 };
