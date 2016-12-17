@@ -2,7 +2,7 @@
 
 Real Time Status  Monitor is a Web project helps to monitor the status of the application job in real time. This is sample project to demostrate the usage of WEBSOCKET. This application is designed to mointor the content of a file available on the server and publish the file content to the client for every 1 minute. 
 This application can be accessed from multiple client stations concurrently. 
-Also it provides extension to receive command (json based) through browser client.
+Also it provides extension to receive command (json based) through browser client and execute commands in the server
 
 ## Getting Started
 Two options available for the usage
