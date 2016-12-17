@@ -1,6 +1,8 @@
 # Real time Status Monitor
 
-Real Time Status  Monitor is a Web project helps to monitor the status of the application job in real time
+Real Time Status  Monitor is a Web project helps to monitor the status of the application job in real time. This is sample project to demostrate the usage of WEBSOCKET. This application is designed to mointor the content of a file available on the server and publish the file content to the client for every 1 minute. 
+This application can be accessed from multiple client stations concurrently. 
+Also it provides extension to receive command (json based) through browser client.
 
 ## Getting Started
 
@@ -28,6 +30,13 @@ Web server
 *[Restart] Restart the Web application 
 
 ```
+### Manual 
+
+* Use URL http://<HOSTNAME>:<port>/StatusCheckWeb/ to load Status Monitor Page
+    Example: http://localhost:8080/StatusCheckWeb/
+* On loading of above "Status Monitor" page, websocket connection get initialzed 
+* Click "Start Monitoring" button to initiate the Status File Monitoring 
+* Click "Stop Monitoring" to stop the status File Monitoring. 
 
 
 
