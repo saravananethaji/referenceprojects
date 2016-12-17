@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> Status Monitor </title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="page-wrapper">
+		<h1>STATUS Monitor</h1>
+
+		<div id="status">Connecting...</div>
+
+		<ul id="messages"></ul>
+
+		<form id="message-form" action="#" method="post">
+			<textarea id="message" placeholder="Write your message here..." required></textarea>
+			<button type="submit">Send Message</button>
+			<button type="button" id="startStusChk">Start Monitoring</button>
+			<button type="button" id="stopStusChck">End Monitoring</button>
+			<button type="button" id="close">End Connection</button>
+		</form>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>
