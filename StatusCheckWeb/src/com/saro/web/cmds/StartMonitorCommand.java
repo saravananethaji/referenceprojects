@@ -16,6 +16,8 @@ public class StartMonitorCommand implements IActionCmd {
 			webDTO.setResponse("monitor already running");
 			return ;
 		}
+		String datastr = webDTO.getRequest();
+		System.out.println(" DATA REQUEST"+ datastr);
 		StatusMonitor monitor =  StatusMonitor.getMonitorInstance(60);
 		webDTO.setResponse("monitor initiated");
 		

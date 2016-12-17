@@ -3,11 +3,13 @@ package com.saro.web.status;
 
 
 import javax.websocket.server.ServerEndpoint;
+import javax.websocket.server.ServerEndpointConfig;
 
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
+import javax.websocket.EndpointConfig;
 import javax.websocket.OnClose;
 import javax.websocket.OnError;
 import javax.websocket.OnMessage;
@@ -20,10 +22,11 @@ import javax.websocket.Session;
 public class StatusWebSocketServer {
 	
 	private static Set<Session> allSessions = new HashSet <Session>(); 
-	
+	//getServletContext().getRealPath
 	 @OnOpen
      public void open(Session session) {
 		 System.out.println("socket opened");
+		 
 		 try {
 			 
 			 session.getBasicRemote().sendText("Connection Established");

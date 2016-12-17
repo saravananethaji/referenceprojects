@@ -22,7 +22,7 @@ window.onload = function() {
 
   // Show a connected message when the WebSocket is opened.
   socket.onopen = function(event) {
-    socketStatus.innerHTML = 'Connected to: ' + event.currentTarget.URL;
+    socketStatus.innerHTML = 'Connected to: ' + event.target.url;
     socketStatus.className = 'open';
   };
 
@@ -65,7 +65,7 @@ window.onload = function() {
 
   startStusChk.onclick=function(e){
 	  
-	  var message = '{"action": "START_MON" ,"data":{"msg":"Start monitor"}}';
+	  var message = '{"action": "START_MON" ,"data":{ "msg":"Start monitor"}}';
 	  socket.send(message);
   };
   
@@ -81,6 +81,7 @@ window.onload = function() {
 
     // Close the WebSocket.
     socket.close();
+    socket=null;
 
     return false;
   };
