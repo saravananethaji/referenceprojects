@@ -6,10 +6,8 @@ Also it provides extension to receive command (json based) through browser clien
 
 ## Getting Started
 Two options available for the usage
-*Build and Use 
-     Download this web project and import into eclipse workspace as dynamic web project.Execute build.xml to compile and create web application binary.
-* Download Binary and Use
-    Download StatusCheckWeb.war from this project and follow the instructions provided in "TOMCAT DEPLOYMENT" section
+* [Build and Use] - Download this web project and import into eclipse workspace as dynamic web project.Execute build.xml to compile and create web application binary.
+* [Download Binary and Use]Download StatusCheckWeb.war from this project and follow the instructions provided in "TOMCAT DEPLOYMENT" section
 ...
 
 ### Prerequisites
