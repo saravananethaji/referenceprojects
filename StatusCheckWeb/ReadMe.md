@@ -5,22 +5,24 @@ This application can be accessed from multiple client stations concurrently.
 Also it provides extension to receive command (json based) through browser client.
 
 ## Getting Started
-
-Download this web project and import into eclipse workspace as dynamic web project.
-Execute build.xml to compile and create web application binary.
-
+Two options available for the usage
+*Build and Use 
+     Download this web project and import into eclipse workspace as dynamic web project.Execute build.xml to compile and create web application binary.
+* Download Binary and Use
+    Download StatusCheckWeb.war from this project and follow the instructions provided in "TOMCAT DEPLOYMENT" section
+...
 
 ### Prerequisites
 
-JDK 1.8 
-Web server 
+*JDK 1.8 
+*Web server 
 
 ```
 
 ### Installing
 
  
-### Tomcat Deployment (Tomcat 8.x or 9.x)
+###  INSTALLATION Tomcat Deployment (Tomcat 8.x or 9.x)
 * [Web Application] Download StatusCheckWeb.war from the project
 * [Deploy] Place StatusCheckWeb.war in the webapps folder
 * [Environment Setting] Update Catalina.sh with following System configuration 
